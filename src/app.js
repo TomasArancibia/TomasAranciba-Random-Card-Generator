@@ -40,20 +40,19 @@ let stopTimer = function() {
 };
 
 let startTimer = function() {
-  window.onload();
+  timer();
   return (stop = true);
 };
 
 window.onload = function() {
   changeCard();
-  timer();
 };
 
 document.getElementById("randomize").addEventListener("click", changeCard);
+document.getElementById("stopTimer").addEventListener("click", stopTimer);
+document.getElementById("resumeTimer").addEventListener("click", startTimer);
 
 let timer = function() {
-  document.getElementById("stopTimer").addEventListener("click", stopTimer);
-  document.getElementById("resumeTimer").addEventListener("click", startTimer);
   setTimeout(function() {
     changeCard();
     if (stop) {
