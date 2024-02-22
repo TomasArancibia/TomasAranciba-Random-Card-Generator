@@ -1,1 +1,48 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: green;
+}
+
+#cartaCustom {
+  background: white;
+  margin-top: 200px;
+  width: 300px;
+  height: 50%;
+  border: 15px black;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+#topColor {
+  margin-top: 0px;
+  padding: 1px;
+  float: left;
+}
+
+#bottomColor {
+  margin-bottom: 0px;
+  padding: 1px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.diamond,
+.heart {
+  font-size: 80px;
+  color: red;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.spade,
+.club {
+  padding: 0px;
+  font-size: 80px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+#cardNumber {
+  font-size: 100px;
+}
