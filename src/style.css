@@ -9,20 +9,18 @@ body {
   margin-top: 200px;
   width: 300px;
   height: 50%;
-  border: 15px black;
+  border: 5px solid black;
   border-radius: 10px;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #topColor {
-  margin-top: 0px;
-  padding: 1px;
-  float: left;
+  display: flex;
+  flex-direction: row;
 }
 
 #bottomColor {
-  margin-bottom: 0px;
-  padding: 1px;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -45,4 +43,35 @@ body {
 
 #cardNumber {
   font-size: 100px;
+}
+
+#randomize {
+  font-size: large;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+#stopTimer {
+  font-size: large;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#resumeTimer {
+  font-size: large;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#mesaVerde {
+  text-align: center;
+}
+#mesaVerde2 {
+  text-align: center;
+}
+#mesaVerde3 {
+  text-align: center;
 }

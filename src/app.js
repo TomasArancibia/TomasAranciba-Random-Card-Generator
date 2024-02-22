@@ -5,11 +5,10 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
+let changeCard = function() {
   let num = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
   let randompinta = Math.ceil(Math.random() * 4);
-  let randomnum = Math.floor(Math.random() * 12);
+  let randomnum = Math.floor(Math.random() * 13);
 
   let pintaSup = document.querySelector("#topColor");
   let pintaInf = document.querySelector("#bottomColor");
@@ -34,4 +33,31 @@ window.onload = function() {
   }
 
   numCarta.innerHTML = num[randomnum];
+};
+
+let stopTimer = function() {
+  return (stop = false);
+};
+
+let startTimer = function() {
+  window.onload();
+  return (stop = true);
+};
+
+window.onload = function() {
+  changeCard();
+  timer();
+};
+
+document.getElementById("randomize").addEventListener("click", changeCard);
+
+let timer = function() {
+  document.getElementById("stopTimer").addEventListener("click", stopTimer);
+  document.getElementById("resumeTimer").addEventListener("click", startTimer);
+  setTimeout(function() {
+    changeCard();
+    if (stop) {
+      timer();
+    }
+  }, 1000);
 };
